@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import type { IProduct } from "../interfaces";
+import type { IFormInput, IProduct } from "../interfaces";
 
 export const productList: IProduct[] = [
   {
@@ -85,5 +85,36 @@ export const productList: IProduct[] = [
       name: "Fashion",
       imageURL: "https://picsum.photos/seed/fashion-dark/400/300",
     },
+  },
+];
+
+export const formInputList: IFormInput[] = [
+  {
+    id: "title",
+    label: "Product Title",
+    type: "text",
+    placeholder: "Enter product title",
+    name: "title",
+  },
+  {
+    id: "description",
+    label: "Description",
+    type: "text",
+    placeholder: "Enter product description",
+    name: "description",
+  },
+  {
+    id: "image",
+    label: "Image URL",
+    type: "text",
+    placeholder: "Enter image URL",
+    name: "imageURL",
+  },
+  {
+    id: "price",
+    label: "Price",
+    type: "string",
+    placeholder: "Enter product price",
+    name: "price",
   },
 ];
